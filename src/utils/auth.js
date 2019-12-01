@@ -17,6 +17,8 @@ export const setUser = (user) => {
   // 本地存储只能存储一些json格式的字符串，所以我们在储存token的时候需要将他进行转换
   // 转换为json格式的字符串即可
   // 存储完毕后我们就可以通过user_key来获取t存储到本地的token信息了
+  // 注意我们这里请求过来的token值是一对象格式的token，该对象的名字为token，对象里面有两个
+  // token
   window.localStorage.setItem(USER_KEY, JSON.stringify(user))
 }
 // 第二个操作是我们需要获取token，带着token来发送请求，此时我们在获取token发送请求时候有两种情况

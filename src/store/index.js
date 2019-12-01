@@ -19,6 +19,8 @@ export default new Vuex.Store({
     user: auth.getUser()
   },
   mutations: {
+    // 如果想让其他js文件调用mutations中的函数方法需要vuex实例点上一个commit（'方法名',该方法的参数）
+    // 即可
     // 此时我们还没有token信息，在用户登录的时候需要把token信息存储到本地，
     // 因为我们是使用vuex来托管数据，所以我们需要在这一步来设置好token信息
     // vuex的特性就是先设置数据容器，再去存储和修改数据，最后一步是请求数据
@@ -49,6 +51,8 @@ export default new Vuex.Store({
     }
     // 此时我们需要配置axios来请求数据，
   },
+  // 如果别的js文件想调用actions方法要通过vuex实例点上dispach('actions中的方法名',该方法名里面的
+  // 参数 )
   actions: {
   },
   modules: {

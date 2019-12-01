@@ -1,5 +1,5 @@
 {
-  "name": "heime-toplines-87",
+  "name": "hm-toutiao-m-87",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,11 +12,9 @@
     "axios": "^0.19.0",
     "core-js": "^3.4.3",
     "json-bigint": "^0.3.0",
-    "npm": "^6.13.1",
-    "postcss-pxtorem": "^4.0.1",
-    "vant": "^2.2.15",
+    "vant": "^2.2.14",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.3",
+    "vue-router": "^3.0.7",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -29,9 +27,10 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "less": "^3.10.3",
+    "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "lint-staged": "^9.4.3",
+    "postcss-pxtorem": "^4.0.1",
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {

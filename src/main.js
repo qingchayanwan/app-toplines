@@ -8,7 +8,8 @@ import store from './store'
 import 'amfe-flexible'
 import Vant from 'vant'
 // 完整的引入后我们还需要将vant的css文件引入进来
-import 'vant/lib/index.css'
+// 因为我们要框架的颜色进行修改此时css要被修改为less
+import 'vant/lib/index.less'
 // 都引入完毕后我们开始在vue中来使用它
 // 在vant插件中，它的默认取值是px但是我们做的是移动端，此时需要把vant的px单位换成
 // rem单位才行，此时我们需要下载两个插件npm i postcss-pxtorem -D和npm i amfe-flexible -S

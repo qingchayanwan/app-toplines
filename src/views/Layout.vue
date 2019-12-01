@@ -1,5 +1,4 @@
 <template>
-  <div>
     <!-- 路由规则以及懒加载设置完毕之后，开始使用vue的移动布局插件，vant
         使用npm i vant -S来进行插件的下载，下载完毕后我们在main.js里面进行相关的配置工作
      -->
@@ -10,7 +9,7 @@
     <!-- click-right是右边提示文字的点击事件 -->
     <van-nav-bar fixed title="黑马头条" right-text="搜索"
       @click-right="$router.push('/search')"/>
-    <div class="my-wrapper" >
+    <div class="my-wrapper">
       <router-view></router-view>
     </div>
     <van-tabbar route>
@@ -22,7 +21,6 @@
       <van-tabbar-item to="/video"  icon="video-o">视频</van-tabbar-item>
       <van-tabbar-item to="/user"  icon="user-o">我的</van-tabbar-item>
     </van-tabbar>
-  </div>
   </div>
 </template>
 
